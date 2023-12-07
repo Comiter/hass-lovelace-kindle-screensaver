@@ -56,4 +56,4 @@ schema:
   PREFERS_COLOR_SCHEME: "list(light|dark)?"
   HA_BATTERY_WEBHOOK: "str"
 environment:
-  output_path: "/output/cover.png"
+  output_path: "/output/cover.jpg"
