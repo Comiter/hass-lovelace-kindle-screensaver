@@ -1,4 +1,4 @@
-name: Lovelace Kindle Screensaver
+name: Lovelace Screenshotter
 version: 1.0.5
 slug: kindle-screensaver
 description: This tool can be used to display a Lovelace view of your Home Assistant instance on a jailbroken Kindle device. It regularly takes a screenshot which can be polled and used as a screensaver image of the online screensaver plugin.
@@ -8,7 +8,7 @@ arch:
   - aarch64
   - amd64
   # -  - See github/ci.yml
-url: 'https://github.com/sibbl/hass-lovelace-kindle-screensaver'
+url: 'https://github.com/Comiter/hass-lovelace-screenshotter'
 image: 'sibbl/hass-lovelace-kindle-screensaver-ha-addon-{arch}'
 webui: 'http://[HOST]:[PORT:5000]'
 ingress: true
