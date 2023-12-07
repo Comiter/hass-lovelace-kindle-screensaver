@@ -1,3 +1,6 @@
+# Home Assistant Lovelace Screenshotter
+This is a fork from the sibbl/hass-lovelace-kindle-screensaver. I'm using it to grab screenshots of graphs to present on eInk screens
+
 # Home Assistant Lovelace Kindle Screensaver
 
 ![ci](https://github.com/sibbl/hass-lovelace-kindle-screensaver/workflows/ci/badge.svg)
