@@ -111,7 +111,7 @@ const batteryStore = {};
       const lastModifiedTime = new Date(stat.mtime).toUTCString();
 
       response.writeHead(200, {
-        "Content-Type": "image/png",
+        "Content-Type": "image/jpg",
         "Content-Length": Buffer.byteLength(data),
         "Last-Modified": lastModifiedTime
       });
@@ -173,7 +173,7 @@ async function renderAndConvertAsync(browser) {
     console.log(`Rendering ${url} to image...`);
     await renderUrlToImageAsync(browser, pageConfig, url, tempPath);
 
-    console.log(`Converting rendered screenshot of ${url} to grayscale png...`);
+    console.log(`Converting rendered screenshot of ${url} to grayscale jpg...`);
     await convertImageToKindleCompatiblePngAsync(
       pageConfig,
       tempPath,
@@ -278,7 +278,7 @@ async function renderUrlToImageAsync(browser, pageConfig, url, path) {
     }
     await page.screenshot({
       path,
-      type: "png",
+      type: "jpg",
       clip: {
         x: 0,
         y: 0,
