@@ -31,8 +31,8 @@ jobs:
           platforms: linux/amd64,linux/arm/v7,linux/arm64
           push: true
           tags: |
-            Comiter/hass-lovelace-screenshotter:${{ env.PACKAGE_VERSION }},
-            Comiter/hass-lovelace-screenshotter:latest
+            comiter/hass-lovelace-screenshotter:${{ env.PACKAGE_VERSION }},
+            comiter/hass-lovelace-screenshotter:latest
       - name: Build and push HA_Addon AMD64 to Docker
         uses: docker/build-push-action@v2
         with:
@@ -42,8 +42,8 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            Comiter/hass-lovelace-screenshotter-ha-addon-amd64:${{ env.PACKAGE_VERSION }},
-            Comiter/hass-lovelace-screenshotter-ha-addon-amd64:latest
+            comiter/hass-lovelace-screenshotter-ha-addon-amd64:${{ env.PACKAGE_VERSION }},
+            comiter/hass-lovelace-screenshotter-ha-addon-amd64:latest
       - name: Build and push HA_Addon aarch64 to Docker
         uses: docker/build-push-action@v2
         with:
@@ -53,8 +53,8 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            Comiter/hass-lovelace-screenshotter-ha-addon-aarch64:${{ env.PACKAGE_VERSION }},
-            Comiter/hass-lovelace-screenshotter-ha-addon-aarch64:latest
+            comiter/hass-lovelace-screenshotter-ha-addon-aarch64:${{ env.PACKAGE_VERSION }},
+            comiter/hass-lovelace-screenshotter-ha-addon-aarch64:latest
 
 
       # Currently fails with. I'dont know why, as build womm. Someone? 
