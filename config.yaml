@@ -1,5 +1,5 @@
 name: Lovelace Screenshotter
-version: 1.0.0
+version: 1.0.1
 slug: kindle-screensaver
 description: Tool to take screenshot of a Lovelace View and export it as a jpg image
 startup: application
