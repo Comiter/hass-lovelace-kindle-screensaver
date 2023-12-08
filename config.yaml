@@ -9,7 +9,7 @@ arch:
   - amd64
   # -  - See github/ci.yml
 url: 'https://github.com/Comiter/hass-lovelace-screenshotter'
-image: 'comiter/hass-lovelace-screenshotter-{arch}'
+image: 'comiter/hass-lovelace-screenshotter-ha-addon-{arch}'
 webui: 'http://[HOST]:[PORT:5000]'
 ingress: true
 ingress_port: 5000
