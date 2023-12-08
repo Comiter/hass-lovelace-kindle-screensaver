@@ -278,7 +278,7 @@ async function renderUrlToImageAsync(browser, pageConfig, url, path) {
     }
     await page.screenshot({
       path,
-      type: "jpg",
+      type: "jpeg",
       clip: {
         x: 0,
         y: 0,
@@ -304,7 +304,6 @@ function convertImageToKindleCompatiblePngAsync(
       .options({
         imageMagick: config.useImageMagick === true
       })
-      .gamma(pageConfig.removeGamma ? 1.0/2.2 : 1.0)
       .dither(pageConfig.dither)
       .rotate("white", pageConfig.rotation)
       .type(pageConfig.colorMode)
